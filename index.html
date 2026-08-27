@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ff4f8b" />
+
+  <title>¡Feliz cumpleaños! 🎂</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Decoraciones -->
+  <div class="floating-decorations" aria-hidden="true">
+    <span>💖</span>
+    <span>✨</span>
+    <span>🎈</span>
+    <span>🌸</span>
+    <span>⭐</span>
+    <span>💝</span>
+  </div>
+
+  <!-- Botón flotante de música -->
+  <button class="music-button" id="musicButton" aria-label="Reproducir música">
+    <span id="musicIcon">🎵</span>
+  </button>
+
+  <!--
+    IMPORTANTE:
+    Coloca tu música en:
+    assets/audio/musica.mp3
+  -->
+  <audio id="backgroundMusic" loop preload="metadata">
+    <source src="assets/audio/musica.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5.
+  </audio>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+
+      <div class="hero-content reveal">
+        <p class="eyebrow">HOY ES UN DÍA MUY ESPECIAL ✨</p>
+
+        <!-- CAMBIA AQUÍ EL NOMBRE -->
+        <h1>
+          ¡Feliz cumpleaños,
+          <span class="script-text">Nidia, Mamá, Amiga, Esposa, Tía, Hermana...</span>!
+        </h1>
+
+        <p class="hero-message">
+          Preparé este pequeño rincón para recordarte lo especial que eres
+          y guardar algunos momentos, palabras y recuerdos que merecen quedarse para siempre.
+        </p>
+
+        <div class="hero-actions">
+          <button class="primary-button" id="surpriseButton">
+            Abrir mi sorpresa 🎁
+          </button>
+
+          <a class="secondary-button" href="#mensaje">
+            Leer mensaje 💌
+          </a>
+        </div>
+
+        <p class="hero-hint">
+          Consejo: activa la música con el botón 🎵
+        </p>
+      </div>
+
+      <div class="cake-wrapper reveal">
+        <div class="cake-card">
+          <div class="cake">🎂</div>
+          <div class="sparkles">✨ ✨ ✨</div>
+          <p>Que hoy sobren sonrisas y falten preocupaciones.</p>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Descubre más</span>
+        <span class="arrow">↓</span>
+      </div>
+    </section>
+
+    <!-- MENSAJE PRINCIPAL -->
+    <section class="section section-soft" id="mensaje">
+      <div class="section-heading reveal">
+        <span class="section-label">UN MENSAJE PARA TI</span>
+        <h2>Hay personas que hacen los días más bonitos 💗</h2>
+      </div>
+
+      <article class="letter-card reveal">
+        <div class="letter-icon">💌</div>
+
+        <p>
+          Hoy queremos desearte un cumpleaños lleno de momentos bonitos, risas sinceras
+          y personas que te recuerden lo mucho que vales.
+        </p>
+
+        <p>
+          Gracias por cada recuerdo, por cada conversación, por cada enseñanza, por la entrega
+          con la que haces todo y por la alegría que contagias a quienes tenemos la suerte de 
+          compartir contigo.
+          Espero que este nuevo año de vida llegue con oportunidades, tranquilidad, sueños 
+          cumplidos y muchísimas razones para sonreír.
+        </p>
+
+        <p>
+          Que nunca te falten motivos para seguir creciendo, celebrando y disfrutando
+          las pequeñas cosas que terminan convirtiéndose en los mejores recuerdos.
+        </p>
+
+        <!-- CAMBIA LA FIRMA -->
+        <p class="signature">
+          Con mucho cariño,<br>
+          <span>Todos 💕</span>
+        </p>
+      </article>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="section" id="fotos">
+      <div class="section-heading reveal">
+        <span class="section-label">RECUERDOS</span>
+        <h2>Momentos que merecen repetirse 📸</h2>
+      </div>
+
+      <div class="gallery">
+        <figure class="photo-card photo-tall reveal">
+          <img src="assets/fotos/1.jpeg" alt="Recuerdo especial 1">
+          <figcaption>Tus ocurrencias ✨</figcaption>
+        </figure>
+
+        <figure class="photo-card reveal">
+          <img src="assets/fotos/2.jpeg" alt="Recuerdo especial 2">
+          <figcaption>Tu gran Amistad 💗</figcaption>
+        </figure>
+
+        <figure class="photo-card reveal">
+          <img src="assets/fotos/3.jpeg" alt="Recuerdo especial 3">
+          <figcaption>El amor por tus hijos 🌷</figcaption>
+        </figure>
+
+        <figure class="photo-card reveal">
+          <img src="assets/fotos/4.jpeg" alt="Recuerdo especial 4">
+          <figcaption>La calides con tus nietos 💫</figcaption>
+        </figure>
+
+        <figure class="photo-card photo-wide reveal">
+          <img src="assets/fotos/5.jpeg" alt="Recuerdo especial 5">
+          <figcaption>La compañia hacia tus sobrinos 🫶</figcaption>
+        </figure>
+
+        <figure class="photo-card photo-tall reveal">
+          <img src="assets/fotos/6.jpeg" alt="Recuerdo especial 1">
+          <figcaption>La excelente madre que eres ✨</figcaption>
+        </figure>
+
+        <figure class="photo-card photo-tall reveal">
+          <img src="assets/fotos/7.jpeg" alt="Recuerdo especial 1">
+          <figcaption>Orgullosas de tí</figcaption> ✨</figcaption>
+        </figure>
+
+        <figure class="photo-card photo-tall reveal">
+          <img src="assets/fotos/8.jpeg" alt="Recuerdo especial 1">
+          <figcaption>Una maravillosa Esposa ✨</figcaption>
+        </figure>
+
+        <figure class="photo-card photo-tall reveal">
+          <img src="assets/fotos/9.jpeg" alt="Recuerdo especial 1">
+          <figcaption>Tu cuidado</figcaption>
+        </figure>
+
+        <figure class="photo-card photo-tall reveal">
+          <img src="assets/fotos/10.jpeg" alt="Recuerdo especial 1">
+          <figcaption>Una hermana ejemplar  ✨</figcaption>
+        </figure>
+
+        <figure class="photo-card photo-tall reveal">
+          <img src="assets/fotos/11.jpeg" alt="Recuerdo especial 1">
+          <figcaption>Tu transparencia como mujer ✨</figcaption>
+        </figure>
+
+        <figure class="photo-card photo-tall reveal">
+          <img src="assets/fotos/12.jpeg" alt="Recuerdo especial 1">
+          <figcaption>Tus ideas ✨</figcaption>
+        </figure>
+
+        <figure class="photo-card photo-tall reveal">
+          <img src="assets/fotos/13.jpeg" alt="Recuerdo especial 1">
+          <figcaption>Tu hospitalidad ✨</figcaption>
+        </figure>
+
+        <figure class="photo-card photo-tall reveal">
+          <img src="assets/fotos/14.jpeg" alt="Recuerdo especial 1">
+          <figcaption>La raíz de esta familia ✨</figcaption>
+        </figure>
+
+        <figure class="photo-card photo-tall reveal">
+          <img src="assets/fotos/15.jpeg" alt="Recuerdo especial 1">
+          <figcaption>Todo ✨</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- AUDIOS -->
+    <section class="section section-dark" id="audios">
+      <div class="section-heading reveal">
+        <span class="section-label light-label">MENSAJES DE VOZ</span>
+        <h2>Un poco de nosotros para tí 🎧</h2>
+      </div>
+
+      <div class="audio-grid">
+          <!-- 1. Doñacarmen -->
+            <article class="audio-card reveal">
+              <div class="audio-number toggle-speaker" role="button" tabindex="0">?</div>
+              <div>
+                <h3>Mensaje especial</h3>
+                <p class="hidden-name" data-name="De: Doña Carmen 💖">Un mensaje lleno de cariño.</p>
+                <audio controls preload="metadata">
+                  <source src="assets/audio/Doñacarmen.ogg" type="audio/ogg">
+                </audio>
+              </div>
+            </article>
+
+            <!-- 2. DoñaEdi -->
+            <article class="audio-card reveal">
+              <div class="audio-number toggle-speaker" role="button" tabindex="0">?</div>
+              <div>
+                <h3>Mensaje especial</h3>
+                <p class="hidden-name" data-name="De: Doña Edi 🌷">Un mensaje lleno de cariño.</p>
+                <audio controls preload="metadata">
+                  <source src="assets/audio/DoñaEdi.ogg" type="audio/ogg">
+                </audio>
+              </div>
+            </article>
+
+            <!-- 3. Gladys -->
+            <article class="audio-card reveal">
+              <div class="audio-number toggle-speaker" role="button" tabindex="0">?</div>
+              <div>
+                <h3>Mensaje especial</h3>
+                <p class="hidden-name" data-name="De: Gladys ✨">Un mensaje lleno de cariño.</p>
+                <audio controls preload="metadata">
+                  <source src="assets/audio/Gladys.ogg" type="audio/ogg">
+                </audio>
+              </div>
+            </article>
+
+            <!-- 4. Lala -->
+            <article class="audio-card reveal">
+              <div class="audio-number toggle-speaker" role="button" tabindex="0">?</div>
+              <div>
+                <h3>Mensaje especial</h3>
+                <p class="hidden-name" data-name="De: Lala 💫">Un mensaje lleno de cariño.</p>
+                <audio controls preload="metadata">
+                  <source src="assets/audio/Lala.ogg" type="audio/ogg">
+                </audio>
+              </div>
+            </article>
+
+            <!-- 5. Less -->
+            <article class="audio-card reveal">
+              <div class="audio-number toggle-speaker" role="button" tabindex="0">?</div>
+              <div>
+                <h3>Mensaje especial</h3>
+                <p class="hidden-name" data-name="De: Less 🌸">Un mensaje lleno de cariño.</p>
+                <audio controls preload="metadata">
+                  <source src="assets/audio/Less.ogg" type="audio/ogg">
+                </audio>
+              </div>
+            </article>
+
+            <!-- 6. Lina -->
+            <article class="audio-card reveal">
+              <div class="audio-number toggle-speaker" role="button" tabindex="0">?</div>
+              <div>
+                <h3>Mensaje especial</h3>
+                <p class="hidden-name" data-name="De: Lina 🎀">Un mensaje lleno de cariño.</p>
+                <audio controls preload="metadata">
+                  <source src="assets/audio/Lina.ogg" type="audio/ogg">
+                </audio>
+              </div>
+            </article>
+
+            <!-- 7. Luna -->
+            <article class="audio-card reveal">
+              <div class="audio-number toggle-speaker" role="button" tabindex="0">?</div>
+              <div>
+                <h3>Mensaje especial</h3>
+                <p class="hidden-name" data-name="De: Luna 🌙">Un mensaje lleno de cariño.</p>
+                <audio controls preload="metadata">
+                  <source src="assets/audio/Luna.ogg" type="audio/ogg">
+                </audio>
+              </div>
+            </article>
+
+            <!-- 8. Maryi -->
+            <article class="audio-card reveal">
+              <div class="audio-number toggle-speaker" role="button" tabindex="0">?</div>
+              <div>
+                <h3>Mensaje especial</h3>
+                <p class="hidden-name" data-name="De: Maryi 💌">Un mensaje lleno de cariño.</p>
+                <audio controls preload="metadata">
+                  <source src="assets/audio/Maryi.ogg" type="audio/ogg">
+                </audio>
+              </div>
+            </article>
+
+            <!-- 9. NidiaPa -->
+            <article class="audio-card reveal">
+              <div class="audio-number toggle-speaker" role="button" tabindex="0">?</div>
+              <div>
+                <h3>Mensaje especial</h3>
+                <p class="hidden-name" data-name="De: Nidia Pa 🌹">Un mensaje lleno de cariño.</p>
+                <audio controls preload="metadata">
+                  <source src="assets/audio/NidiaPa.ogg" type="audio/ogg">
+                </audio>
+              </div>
+            </article>
+
+            <!-- 10. Richi -->
+            <article class="audio-card reveal">
+              <div class="audio-number toggle-speaker" role="button" tabindex="0">?</div>
+              <div>
+                <h3>Mensaje especial</h3>
+                <p class="hidden-name" data-name="De: Richi 🎈">Un mensaje lleno de cariño.</p>
+                <audio controls preload="metadata">
+                  <source src="assets/audio/Richi.ogg" type="audio/ogg">
+                </audio>
+              </div>
+            </article>
+
+            <!-- 11. Samuelito -->
+            <article class="audio-card reveal">
+              <div class="audio-number toggle-speaker" role="button" tabindex="0">?</div>
+              <div>
+                <h3>Mensaje especial</h3>
+                <p class="hidden-name" data-name="De: Samuelito 🧸">Un mensaje lleno de cariño.</p>
+                <audio controls preload="metadata">
+                  <source src="assets/audio/Samuelito.ogg" type="audio/ogg">
+                </audio>
+              </div>
+            </article>
+
+            <!-- 12. Yin -->
+            <article class="audio-card reveal">
+              <div class="audio-number toggle-speaker" role="button" tabindex="0">?</div>
+              <div>
+                <h3>Mensaje especial</h3>
+                <p class="hidden-name" data-name="De: Yin ⭐">Un mensaje lleno de cariño.</p>
+                <audio controls preload="metadata">
+                  <source src="assets/audio/Yin.ogg" type="audio/ogg">
+                </audio>
+              </div>
+            </article>
+      </div>
+    </section>
+
+    <!-- RAZONES -->
+    <section class="section" id="razones">
+      <div class="section-heading reveal">
+        <span class="section-label">PARA RECORDAR</span>
+        <h2>Pequeñas razones por las que eres increíble 🌟</h2>
+      </div>
+
+      <div class="reasons-grid">
+        <article class="reason-card reveal">
+          <span>01</span>
+          <h3>Tu forma de ser</h3>
+          <p>
+            Porque tienes una manera única de hacer sentir bien a las personas que están cerca.
+          </p>
+        </article>
+
+        <article class="reason-card reveal">
+          <span>02</span>
+          <h3>Tu sonrisa</h3>
+          <p>
+            Porque puede cambiar el ambiente de un momento mucho más de lo que imaginas.
+          </p>
+        </article>
+
+        <article class="reason-card reveal">
+          <span>03</span>
+          <h3>Tus sueños</h3>
+          <p>
+            Porque merecen espacio, tiempo y muchas oportunidades para convertirse en realidad.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section class="final-section">
+      <div class="final-card reveal">
+        <span class="big-heart">💖</span>
+        <p class="section-label">Y POR ÚLTIMO...</p>
+        <h2>Deseo que este sea uno de tus mejores años.</h2>
+        <p>
+          Que vengan nuevas historias, viajes, metas, aprendizajes, abrazos,
+          aventuras y muchos cumpleaños más para celebrar.
+        </p>
+
+        <button class="primary-button" id="celebrateButton">
+          ¡Celebrar! 🎉
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hecho con 💕 especialmente para ti.</p>
+  </footer>
+
+  <div id="confettiContainer" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
