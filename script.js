@@ -182,7 +182,7 @@ function showSpeakerReveal(name) {
 
     overlay.remove();
 
-  }, 1800);
+  }, 3000);
 }
 
 
