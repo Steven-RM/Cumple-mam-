@@ -25,7 +25,7 @@ window.addEventListener("load", () => {
   document
     .querySelectorAll(".hero .reveal")
     .forEach((element, index) => {
-      setTimeout(() => element.classList.add("visible"), index * 180);
+      setTimeout(() => element.classList.add("visible"), index * 400);
     });
 });
 
